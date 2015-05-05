@@ -19,6 +19,10 @@ app.post('/formsubmit', function(req, res){
 	// res.send('Success');
 });
 
+app.get('/success', function(req, res) {
+	res.render('success');
+});
+
 var server = app.listen(6451, function() {
 	console.log('Express server listening on port ' + server.address().port);
 });
