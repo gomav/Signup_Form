@@ -1,0 +1,12 @@
+extends layout
+
+block content
+	link(href='/styles/main.css', rel='stylesheet')
+	
+	h1 Happy "Cinco de Mayo!" 
+	h4 Ps, not really Mexico's day of indepence.
+	h6 Celebration for "Battle of Puebla" agains French Forces.
+	
+	form(action='/formSubmit', method='post')
+		input(name='email', placeholder='you@domain.com', type='email')
+		input(type='submit')
