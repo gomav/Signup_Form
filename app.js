@@ -23,6 +23,7 @@ app.get('/success', function(req, res) {
 	res.render('success');
 });
 
-var server = app.listen(6451, function() {
+var port = process.env.PORT || 6451;
+var server = app.listen(PORT, function() {
 	console.log('Express server listening on port ' + server.address().port);
 });
